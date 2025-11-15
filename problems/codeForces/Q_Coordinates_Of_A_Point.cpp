@@ -1,0 +1,44 @@
+/* Author: Arnab Sarkar */
+/* codeforces: 28arnab */
+/* atcoder: arnab28 */
+/* codechef: arnabs28 */
+/* cses: 28arnab */
+
+#include <iostream>
+using namespace std;
+
+using ull = unsigned long long int;
+using ll = long long int;
+using ld = long double;
+using st = string;
+
+void solve();
+
+int main() {
+  ios::sync_with_stdio(0);
+  cin.tie(0);
+  int num_test = 1;
+  // cin >> num_test;
+  while (num_test--)
+    solve();
+  return 0;
+}
+
+void solve() {
+  double x, y;
+  cin >> x >> y;
+  if (x == 0.0 && y == 0.0)
+    cout << "Origem";
+  else if (y == 0.0)
+    cout << "Eixo X";
+  else if (x == 0.0)
+    cout << "Eixo Y";
+  else if (x > 0.0 && y > 0.0)
+    cout << "Q1";
+  else if (x < 0.0 && y > 0.0)
+    cout << "Q2";
+  else if (x < 0.0 && y < 0.0)
+    cout << "Q3";
+  else
+    cout << "Q4";
+}
