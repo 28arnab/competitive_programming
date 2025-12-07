@@ -1,4 +1,5 @@
 cp_header.h.gch
+cp_template
 *exe
 *.cph/
 /*.cpp
