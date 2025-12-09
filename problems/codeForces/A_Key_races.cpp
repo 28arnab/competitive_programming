@@ -1,0 +1,52 @@
+#ifndef ONLINE_JUDGE
+#include "cp_header.h"
+#else
+#include <bits/stdc++.h>
+using namespace std;
+#endif
+
+using ll = long long;
+using ld = long double;
+using st = string;
+
+#define F first
+#define S second
+
+#define REP(i, a, b) for (ll i = a; i <= b; i++)
+#define PER(i, a, b) for (ll i = b; i >= a; i--)
+
+using vll = vector<ll>;
+using vld = vector<ld>;
+using vs = vector<st>;
+
+using pll = pair<ll, ll>;
+using pld = pair<ld, ld>;
+using ps = pair<st, st>;
+
+void solve()
+{
+    int s, t_1, t_2, p_1, p_2, person_1{}, person_2{};
+    cin >> s >> t_1 >> t_2 >> p_1 >> p_2;
+    person_1 += (s * t_1) + (2 * p_1);
+    person_2 += (s * t_2) + (2 * p_2);
+    if (person_1 == person_2)
+    {
+        cout << "Friendship" << endl;
+        return;
+    }
+    cout << (person_1 > person_2 ? "Second" : "First");
+}
+
+int32_t main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int t = 1;
+    // cin >> t;
+    for (int i = 1; i <= t; i++)
+    {
+        solve();
+    }
+    return 0;
+}
