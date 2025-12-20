@@ -3,8 +3,8 @@ using namespace std;
 
 #define LOCAL
 
-#define f first
-#define s second
+#define F first
+#define S second
 
 using ll = long long;
 using ld = long double;
