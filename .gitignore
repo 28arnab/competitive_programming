@@ -1,5 +1,7 @@
 cp_header.h.gch
+cp_header.pch
 cp_template
+build/*
 *exe
 *.cph/
 /*.cpp
