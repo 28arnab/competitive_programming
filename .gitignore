@@ -5,3 +5,5 @@ build/*
 *exe
 *.cph/
 /*.cpp
+.vscode
+.idea
